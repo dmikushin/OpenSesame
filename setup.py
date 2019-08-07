@@ -139,7 +139,7 @@ def data_files():
 
 
 # Temporarily create README.txt
-shutil.copy(u'readme.md', u'README.txt')
+shutil.copy(u'README.md', u'README.txt')
 
 setup(name=u"python-opensesame",
 	version=version,

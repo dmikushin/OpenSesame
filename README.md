@@ -13,7 +13,7 @@ Create a fresh Python virtual environment and install prerequisites:
 ```
 python3 -m venv .
 source bin/activate
-pip3 install PyQt5 qtpy QScintilla PyQtWebEngine
+pip3 install PyQt5 qtpy QScintilla PyQtWebEngine markdown
 sudo apt install libyaml-cpp-dev
 ```
 
