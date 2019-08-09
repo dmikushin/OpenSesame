@@ -35,5 +35,5 @@ QObject::setParent: Cannot set parent, new parent is in a different thread
 Trace/breakpoint trap (core dumped)
 ```
 
-This comes from class `IPythonImporter(QtCore.QThread)` used to initialize IPython in a separate thread. Did not work until `ipykernel==4.6.1` (which [https://osdoc.cogsci.nl/3.2/dev/fromsource/#icon-theme](OpenSesame docs) mention as "optional") and `qtconsole` have beed installed as shown above.
+This comes from class `IPythonImporter(QtCore.QThread)` used to initialize IPython in a separate thread. Did not work until `ipykernel==4.6.1` (which [OpenSesame docs](https://osdoc.cogsci.nl/3.2/dev/fromsource/) mention as "optional") and `qtconsole` have beed installed as shown above.
 
