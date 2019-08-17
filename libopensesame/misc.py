@@ -380,6 +380,7 @@ def escape_html(s):
 #
 # - The working directory (cwd)
 # - The folder that contains libopensesame (parent_folder)
+# - The folder that contains libopensesame (parent_folder) / share
 # - The userbase folder:
 #		- ~/.local (on Ubuntu 16.04)
 # - The user site-packages folder:
@@ -399,7 +400,7 @@ else:
 	cwd = os.getcwdu()
 parent_folder = safe_decode(os.path.dirname(os.path.dirname(__file__)),
 	enc=filesystem_encoding())
-base_folders = [cwd, parent_folder]
+base_folders = [cwd, parent_folder, os.path.join(parent_folder, u'share')]
 if hasattr(site, u'getuserbase'):
 	base_folders.append(os.path.join(
 		safe_decode(site.getuserbase(), enc=filesystem_encoding()), u'share'))
