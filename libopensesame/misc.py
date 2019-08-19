@@ -420,3 +420,10 @@ base_folders.append(os.path.join(
 		enc=filesystem_encoding()),
 	u"share"))
 base_folders = list(filter(os.path.exists, base_folders))
+
+try:
+	import pygaze
+	base_folders += [os.path.join(os.path.dirname(os.path.dirname(pygaze.__file__)), u'share')]
+except:
+	pass
+
